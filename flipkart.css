@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.src {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+:root {
+    --main-bg-color: rgb(13, 68, 5);
+  }
+  :root {
+    --main-bg-color: #026670; /* Example primary color */
+    --button-bg-color: #013220; /* Darker shade for buttons */
+    --button-hover-bg-color: #024930; /* Slightly lighter for hover state */
+    --text-color: #049302; /* Green text color */
+    --text-hover-color: #ffffff; /* White text on hover */
+    --font-primary: 'Ubuntu', sans-serif;
+    --font-secondary: 'Mukta', sans-serif;
+}
+
+.topbar {
+    background-color: var(--main-bg-color);
+    display: flex;
+    height: 10vh;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+nav ul a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+nav ul a:hover {
+    color: var(--text-hover-color);
+}
+
+li {
+    display: inline;
+    padding: 0.875rem; /* Using rem for scalable spacing */
+    font-family: var(--font-secondary), sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.logonm {
+    color: var(--text-hover-color);
+    font-family: var(--font-primary);
+    font-size: 1.25rem; /* Larger font size for logo name */
+}
+
+.srchbar {
+    width: 32vw;
+    height: 5vh;
+    background-color: white;
+}
+
+.logbtn, .btn {
+    height: 5vh;
+    background-color: white;
+    color: var(--text-color);
+    text-align: center;
+    border-radius: 0.25rem; /* Consistent border-radius */
+    font-family: var(--font-primary);
+    cursor: pointer; /* Indicates that the element is clickable */
+    border: none; /* Removes default border */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.logbtn {
+    width: 8vw;
+}
+
+.btn {
+    width: 5vw;
+    background-color: var(--button-bg-color);
+    margin-left: 5px;
+}
+
+.btn:hover, .logbtn:hover {
+    background-color: var(--button-hover-bg-color); /* Slightly lighter shade on hover */
+}
+
+.btn:focus, .logbtn:focus {
+    outline: 2px solid var(--text-hover-color); /* Focus state for accessibility */
+    outline-offset: 2px;
+}
+
+.srbtn {
+    margin-top: 5px;
+}
+main {
+    /* height: calc(100vh - 5vh - 10vh); */
+    background-color: grey;
+}
+footer {
+    height: 5vh;
+    background-color: var(--main-bg-color);
+    color: white;
+    text-align: center;
+    font-family: 'EB Garamond', sans-serif;
+    position: relative;
+    z-index: 1;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: space-around;
+}
+
+.ad {
+    /* display: flex;
+    justify-content: center; */
+    margin: auto;
+    margin-top: 2px;
+    border: 2px solid rgb(145, 143, 143);
+    /* box-sizing: content-box; */
+    /* background-size: cover;  */
+    width: 95vw;
+    /* height: calc(100vh - 10vh - 5vh);  */
+}
+.slide1 {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 2px solid rgb(214, 214, 214);
+    margin: 6px;
+    width: 95vw;
+    height: 250px;
+    background-color: white;
+}
+.cards {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
+    overflow: hidden;
+    max-width: 92vw;
+    height: 200px;   
+}
+.card {
+    width: 170px;
+    height: 200px;
+    /* border: 1px 1px none 1px solid rgb(202, 200, 200); */
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: auto 5px; */
+}
+h2 {
+    margin: auto auto auto 9px;
+}
+.pd {
+    padding: 0 10px;
+}
